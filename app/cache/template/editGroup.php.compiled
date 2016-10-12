@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html style="opacity:0;">
+	<head>
+		<meta charset="utf-8" />
+		<title>Éditer un groupe - GestNotes</title>
+		<link rel="icon" type="image/png" href="/public/img/icon.png" />
+		<link href="/public/css/default.css" rel="stylesheet" media="screen" type="text/css" /> 
+		<link href="/public/file/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css" />
+		<script type="text/javascript" src="/public/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/public/js/default.js"></script>
+	</head>
+	<body id="body">
+		<header class="default">
+			<div id="header-left">
+				<i class="fa fa-book"></i> GestNotes
+			</div>
+			<div id="header-right">
+				<div class="right-account">
+					<div id="logout" class="account-logout">
+						<i class="fa fa-sign-out"></i>
+					</div>
+					<div class="account-profile">
+						<div class="profile-username">
+							William - Stow						</div>
+						<div class="profile-avatar">
+							<img src="/public/img/user.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"/>
+		</header>
+		<div id="side-menu">
+			<ul>
+				<li >
+					<a href="/">
+						<i class="fa fa-home"></i>
+						<span class="title">Accueil</class>
+					</a>
+				</li>
+				<li >
+					<a href="/user">
+						<i class="fa fa-user"></i>
+						<span class="title">Profil</class>
+					</a>
+				</li>
+																	<li >
+						<a href="/admin/student">
+							<i class="fa fa-user-plus"></i>
+							<span class="title">Élèves</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/teacher">
+							<i class="fa fa-binoculars"></i>
+							<span class="title">Professeurs</class>
+						</a>
+					</li>
+					<li class="active">
+						<a href="/admin/group">
+							<i class="fa fa-users"></i>
+							<span class="title">Groupes</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/course">
+							<i class="fa fa-folder-open"></i>
+							<span class="title">Cours</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/mark">
+							<i class="fa fa-university"></i>
+							<span class="title">Notes</class>
+						</a>
+					</li>
+							</ul>
+		</div>
+		<div id="main">
+							<h2>Éditer un groupe</h2>
+						<div id="fil-ariane">
+				<ul>
+																<li>
+							Accueil						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Groupe						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Éditer un groupe						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Groupe B						</li>
+															</ul>
+			</div>
+			
+
+
+			
+
+
+
+<form method="post" action="">
+	<label>Nom</label><input type="text" name="name" value="Groupe B"/><br />
+	<label style="vertical-align:top">Elèves du groupe</label>
+	<select name="student" multiple style="min-height: 150px;">
+									<option value="20130089" selected>Fabien Beaujean</option>
+						</select><br />
+	<input type="hidden" name="token" value="703a4502e589c4c25b96d9f20c31f76f9e978606" />
+	<input type="submit" value="Enregistrer" />
+</form>
+
+		</div>
+		<footer></footer>	
+	</body>
+</html>
+

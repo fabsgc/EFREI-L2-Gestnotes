@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html style="opacity:0;">
+	<head>
+		<meta charset="utf-8" />
+		<title>Bulletin - GestNotes</title>
+		<link rel="icon" type="image/png" href="/public/img/icon.png" />
+		<link href="/public/css/default.css" rel="stylesheet" media="screen" type="text/css" /> 
+		<link href="/public/file/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css" />
+		<script type="text/javascript" src="/public/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/public/js/default.js"></script>
+	</head>
+	<body id="body">
+		<header class="default">
+			<div id="header-left">
+				<i class="fa fa-book"></i> GestNotes
+			</div>
+			<div id="header-right">
+				<div class="right-account">
+					<div id="logout" class="account-logout">
+						<i class="fa fa-sign-out"></i>
+					</div>
+					<div class="account-profile">
+						<div class="profile-username">
+							Fabien - Beaujean						</div>
+						<div class="profile-avatar">
+							<img src="/public/img/avatar.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"/>
+		</header>
+		<div id="side-menu">
+			<ul>
+				<li >
+					<a href="/">
+						<i class="fa fa-home"></i>
+						<span class="title">Accueil</class>
+					</a>
+				</li>
+				<li >
+					<a href="/user">
+						<i class="fa fa-user"></i>
+						<span class="title">Profil</class>
+					</a>
+				</li>
+									<li class="active">
+						<a href="/student/mark">
+							<i class="fa fa-university"></i>
+							<span class="title">Notes</class>
+						</a>
+					</li>
+					<li >
+						<a href="/student/course">
+							<i class="fa fa-folder-open"></i>
+							<span class="title">Cours</class>
+						</a>
+					</li>
+															</ul>
+		</div>
+		<div id="main">
+							<h2>Bulletin</h2>
+						<div id="fil-ariane">
+				<ul>
+																<li>
+							Accueil						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Notes						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Bulletin						</li>
+															</ul>
+			</div>
+			
+
+
+			
+
+<h3>Moyenne générale : 14.2/20</h3>
+
+	<h4>UML 2 (14.2/20)</h4>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Matière</th>
+				<th>Coefficient</th>
+				<th>Note</th>
+			<tr>
+		</thead>
+		<tbody>
+												<tr>
+						<td>
+							UML 2 : DE						</td>
+						<td>0.4</td>
+						<td>16</a></td>
+					</tr>
+																<tr>
+						<td>
+							UML 2 : TP						</td>
+						<td>0.3</td>
+						<td>16</a></td>
+					</tr>
+																<tr>
+						<td>
+							UML 2 : Projet						</td>
+						<td>0.3</td>
+						<td>10</a></td>
+					</tr>
+									<tbody>
+	</table>
+
+
+		</div>
+		<footer></footer>	
+	</body>
+</html>
+

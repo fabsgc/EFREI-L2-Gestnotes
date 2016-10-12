@@ -1,0 +1,8 @@
+php_flag short_open_tag off
+RewriteEngine On
+
+AddHandler cgi-script .exe
+Options +ExecCGI
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.exe [QSA,L]

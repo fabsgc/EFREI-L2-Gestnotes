@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gesnote" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="index" prefix_auto="1" extension_auto="1" />
+				<Option object_output="app/cache/compilation/obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-march=corei7-avx" />
+					<Add option="-g" />
+					<Add directory="../../../Program Files (x86)/CodeBlocks/mingw64/x86_64-w64-mingw32/include" />
+				</Compiler>
+				<Linker>
+					<Add library="..\..\..\Program Files (x86)\CodeBlocks\mingw32\i686-w64-mingw32\lib\libmysqlclient.a" />
+					<Add directory="../../../Program Files (x86)/CodeBlocks/mingw64/x86_64-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="index" prefix_auto="1" extension_auto="1" />
+				<Option object_output="app/cache/compilation/obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../../../Program Files (x86)/CodeBlocks/mingw64/x86_64-w64-mingw32/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="..\..\..\Program Files (x86)\CodeBlocks\mingw32\i686-w64-mingw32\lib\libmysqlclient.a" />
+					<Add directory="../../../Program Files (x86)/CodeBlocks/mingw64/x86_64-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="app/controller/AdminCourseController.cpp" />
+		<Unit filename="app/controller/AdminCourseController.hpp" />
+		<Unit filename="app/controller/AdminGroupController.cpp" />
+		<Unit filename="app/controller/AdminGroupController.hpp" />
+		<Unit filename="app/controller/AdminMarkController.cpp" />
+		<Unit filename="app/controller/AdminMarkController.hpp" />
+		<Unit filename="app/controller/AdminStudentController.cpp" />
+		<Unit filename="app/controller/AdminStudentController.hpp" />
+		<Unit filename="app/controller/AdminTeacherController.cpp" />
+		<Unit filename="app/controller/AdminTeacherController.hpp" />
+		<Unit filename="app/controller/IndexController.cpp" />
+		<Unit filename="app/controller/IndexController.hpp" />
+		<Unit filename="app/controller/StudentCourseController.cpp" />
+		<Unit filename="app/controller/StudentCourseController.hpp" />
+		<Unit filename="app/controller/StudentMarkController.cpp" />
+		<Unit filename="app/controller/StudentMarkController.hpp" />
+		<Unit filename="app/controller/TeacherCourseController.cpp" />
+		<Unit filename="app/controller/TeacherCourseController.hpp" />
+		<Unit filename="app/controller/TeacherMarkController.cpp" />
+		<Unit filename="app/controller/TeacherMarkController.hpp" />
+		<Unit filename="app/controller/TeacherStudentController.cpp" />
+		<Unit filename="app/controller/TeacherStudentController.hpp" />
+		<Unit filename="app/controller/UserController.cpp" />
+		<Unit filename="app/controller/UserController.hpp" />
+		<Unit filename="app/entity/Admin.cpp" />
+		<Unit filename="app/entity/Admin.hpp" />
+		<Unit filename="app/entity/Contact.cpp" />
+		<Unit filename="app/entity/Contact.hpp" />
+		<Unit filename="app/entity/Course.cpp" />
+		<Unit filename="app/entity/Course.hpp" />
+		<Unit filename="app/entity/Group.cpp" />
+		<Unit filename="app/entity/Group.hpp" />
+		<Unit filename="app/entity/Mark.cpp" />
+		<Unit filename="app/entity/Mark.hpp" />
+		<Unit filename="app/entity/Person.cpp" />
+		<Unit filename="app/entity/Person.hpp" />
+		<Unit filename="app/entity/PersonDetail.cpp" />
+		<Unit filename="app/entity/PersonDetail.hpp" />
+		<Unit filename="app/entity/ReportCard.cpp" />
+		<Unit filename="app/entity/ReportCard.hpp" />
+		<Unit filename="app/entity/Student.cpp" />
+		<Unit filename="app/entity/Student.hpp" />
+		<Unit filename="app/entity/Teacher.cpp" />
+		<Unit filename="app/entity/Teacher.hpp" />
+		<Unit filename="app/include.cpp" />
+		<Unit filename="app/include.hpp" />
+		<Unit filename="app/model/AdminCourseModel.cpp" />
+		<Unit filename="app/model/AdminCourseModel.hpp" />
+		<Unit filename="app/model/AdminGroupModel.cpp" />
+		<Unit filename="app/model/AdminGroupModel.hpp" />
+		<Unit filename="app/model/AdminMarkModel.cpp" />
+		<Unit filename="app/model/AdminMarkModel.hpp" />
+		<Unit filename="app/model/AdminStudentModel.cpp" />
+		<Unit filename="app/model/AdminStudentModel.hpp" />
+		<Unit filename="app/model/AdminTeacherModel.cpp" />
+		<Unit filename="app/model/AdminTeacherModel.hpp" />
+		<Unit filename="app/model/IndexModel.cpp" />
+		<Unit filename="app/model/IndexModel.hpp" />
+		<Unit filename="app/model/StudentCourseModel.cpp" />
+		<Unit filename="app/model/StudentCourseModel.hpp" />
+		<Unit filename="app/model/StudentMarkModel.cpp" />
+		<Unit filename="app/model/StudentMarkModel.hpp" />
+		<Unit filename="app/model/TeacherCourseModel.cpp" />
+		<Unit filename="app/model/TeacherCourseModel.hpp" />
+		<Unit filename="app/model/TeacherMarkModel.cpp" />
+		<Unit filename="app/model/TeacherMarkModel.hpp" />
+		<Unit filename="app/model/TeacherStudentModel.cpp" />
+		<Unit filename="app/model/TeacherStudentModel.hpp" />
+		<Unit filename="app/model/UserModel.cpp" />
+		<Unit filename="app/model/UserModel.hpp" />
+		<Unit filename="function.cpp" />
+		<Unit filename="function.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="system/core/Auth/Auth.cpp" />
+		<Unit filename="system/core/Auth/Auth.hpp" />
+		<Unit filename="system/core/Config/Config.cpp" />
+		<Unit filename="system/core/Config/Config.hpp" />
+		<Unit filename="system/core/Controller/Controller.cpp" />
+		<Unit filename="system/core/Controller/Controller.hpp" />
+		<Unit filename="system/core/Database/Database.cpp" />
+		<Unit filename="system/core/Database/Database.hpp" />
+		<Unit filename="system/core/Engine/Engine.cpp" />
+		<Unit filename="system/core/Engine/Engine.hpp" />
+		<Unit filename="system/core/Entity/Entity.cpp" />
+		<Unit filename="system/core/Entity/Entity.hpp" />
+		<Unit filename="system/core/Form/FormElement.cpp" />
+		<Unit filename="system/core/Form/FormElement.hpp" />
+		<Unit filename="system/core/Form/FormValidator.cpp" />
+		<Unit filename="system/core/Form/FormValidator.hpp" />
+		<Unit filename="system/core/Model/Model.cpp" />
+		<Unit filename="system/core/Model/Model.hpp" />
+		<Unit filename="system/core/Request/Request.cpp" />
+		<Unit filename="system/core/Request/Request.hpp" />
+		<Unit filename="system/core/Routing/Route.cpp" />
+		<Unit filename="system/core/Routing/Route.hpp" />
+		<Unit filename="system/core/Session/Session.cpp" />
+		<Unit filename="system/core/Session/Session.hpp" />
+		<Unit filename="system/core/Sha1/Sha1.cpp" />
+		<Unit filename="system/core/Sha1/Sha1.hpp" />
+		<Unit filename="system/core/Sql/Sql.cpp" />
+		<Unit filename="system/core/Sql/Sql.hpp" />
+		<Unit filename="system/core/Template/Template.cpp" />
+		<Unit filename="system/core/Template/Template.hpp" />
+		<Unit filename="system/core/Template/TemplateContainer.cpp" />
+		<Unit filename="system/core/Template/TemplateContainer.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerBool.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerBool.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerDataMap.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerDataMap.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerDataVector.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerDataVector.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityAdmin.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityAdmin.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityContact.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityContact.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityCourse.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityCourse.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityGroup.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityGroup.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityMark.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityMark.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityPersonDetail.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityPersonDetail.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityReportCard.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityReportCard.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityStudent.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityStudent.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityTeacher.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerEntityTeacher.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerFloat.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerFloat.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerInt.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerInt.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerString.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerString.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerStringMap.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerStringMap.hpp" />
+		<Unit filename="system/core/Template/TemplateContainerVectorEntity.cpp" />
+		<Unit filename="system/core/Template/TemplateContainerVectorEntity.hpp" />
+		<Unit filename="system/core/Tinyxml/tinystr.cpp" />
+		<Unit filename="system/core/Tinyxml/tinystr.h" />
+		<Unit filename="system/core/Tinyxml/tinyxml.cpp" />
+		<Unit filename="system/core/Tinyxml/tinyxml.h" />
+		<Unit filename="system/core/Tinyxml/tinyxmlerror.cpp" />
+		<Unit filename="system/core/Tinyxml/tinyxmlparser.cpp" />
+		<Unit filename="system/core/Url/Url.cpp" />
+		<Unit filename="system/core/Url/Url.hpp" />
+		<Unit filename="system/include.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

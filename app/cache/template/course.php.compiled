@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html style="opacity:0;">
+	<head>
+		<meta charset="utf-8" />
+		<title>C++ - GestNotes</title>
+		<link rel="icon" type="image/png" href="/public/img/icon.png" />
+		<link href="/public/css/default.css" rel="stylesheet" media="screen" type="text/css" /> 
+		<link href="/public/file/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css" />
+		<script type="text/javascript" src="/public/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/public/js/default.js"></script>
+	</head>
+	<body id="body">
+		<header class="default">
+			<div id="header-left">
+				<i class="fa fa-book"></i> GestNotes
+			</div>
+			<div id="header-right">
+				<div class="right-account">
+					<div id="logout" class="account-logout">
+						<i class="fa fa-sign-out"></i>
+					</div>
+					<div class="account-profile">
+						<div class="profile-username">
+							William - Stow						</div>
+						<div class="profile-avatar">
+							<img src="/public/img/user.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"/>
+		</header>
+		<div id="side-menu">
+			<ul>
+				<li >
+					<a href="/">
+						<i class="fa fa-home"></i>
+						<span class="title">Accueil</class>
+					</a>
+				</li>
+				<li >
+					<a href="/user">
+						<i class="fa fa-user"></i>
+						<span class="title">Profil</class>
+					</a>
+				</li>
+																	<li >
+						<a href="/admin/student">
+							<i class="fa fa-user-plus"></i>
+							<span class="title">Élèves</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/teacher">
+							<i class="fa fa-binoculars"></i>
+							<span class="title">Professeurs</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/group">
+							<i class="fa fa-users"></i>
+							<span class="title">Groupes</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/course">
+							<i class="fa fa-folder-open"></i>
+							<span class="title">Cours</class>
+						</a>
+					</li>
+					<li class="active">
+						<a href="/admin/mark">
+							<i class="fa fa-university"></i>
+							<span class="title">Notes</class>
+						</a>
+					</li>
+							</ul>
+		</div>
+		<div id="main">
+							<h2>C++</h2>
+						<div id="fil-ariane">
+				<ul>
+																<li>
+							Accueil						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Notes						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Groupe A						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							C++						</li>
+															</ul>
+			</div>
+			
+
+
+			
+
+
+<!--<a class="button"><span class="fa fa-save"></span></a>-->
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nom</th>
+			<th>CE (0)</th>
+			<th>DE (0.8)</th>
+			<th>TP (0.2)</th>
+			<th>Projet (0)</th>
+		<tr>
+	</thead>
+	<tbody>
+					<tr>
+				<td>test test</td>
+										<td>
+															<input type="text" class="full" disabled />
+													</td>
+										<td>
+															<input type="text" class="full" onkeyup="updateMark(event, this,20130091, 2)" value="20" />
+													</td>
+										<td>
+															<input type="text" class="full" onkeyup="updateMark(event, this,20130091, 3)" value="20" />
+													</td>
+										<td>
+															<input type="text" class="full" disabled />
+													</td>
+							</tr>
+			<tbody>
+</table>
+
+<script type="text/javascript">
+	function updateMark(event, object, student, type)
+	{
+		var key = window.event ? event.keyCode : event.which;
+		
+		if(key==13){
+			if(object.value != "")
+			{
+				$.ajax({
+					type: "GET",
+					url: "/admin/mark/set/1/1/" + student + "/" + object.value + "/" + type + "/703a4502e589c4c25b96d9f20c31f76f9e978606",
+					data: {
+					}
+				}).done(function(data) {
+
+				});
+			}
+		}
+	}
+</script>
+
+
+		</div>
+		<footer></footer>	
+	</body>
+</html>
+

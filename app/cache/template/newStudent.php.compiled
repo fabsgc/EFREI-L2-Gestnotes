@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html style="opacity:0;">
+	<head>
+		<meta charset="utf-8" />
+		<title>Nouvel élève - GestNotes</title>
+		<link rel="icon" type="image/png" href="/public/img/icon.png" />
+		<link href="/public/css/default.css" rel="stylesheet" media="screen" type="text/css" /> 
+		<link href="/public/file/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css" />
+		<script type="text/javascript" src="/public/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/public/js/default.js"></script>
+	</head>
+	<body id="body">
+		<header class="default">
+			<div id="header-left">
+				<i class="fa fa-book"></i> GestNotes
+			</div>
+			<div id="header-right">
+				<div class="right-account">
+					<div id="logout" class="account-logout">
+						<i class="fa fa-sign-out"></i>
+					</div>
+					<div class="account-profile">
+						<div class="profile-username">
+							William - Stow						</div>
+						<div class="profile-avatar">
+							<img src="/public/img/user.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"/>
+		</header>
+		<div id="side-menu">
+			<ul>
+				<li >
+					<a href="/">
+						<i class="fa fa-home"></i>
+						<span class="title">Accueil</class>
+					</a>
+				</li>
+				<li >
+					<a href="/user">
+						<i class="fa fa-user"></i>
+						<span class="title">Profil</class>
+					</a>
+				</li>
+																	<li class="active">
+						<a href="/admin/student">
+							<i class="fa fa-user-plus"></i>
+							<span class="title">Élèves</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/teacher">
+							<i class="fa fa-binoculars"></i>
+							<span class="title">Professeurs</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/group">
+							<i class="fa fa-users"></i>
+							<span class="title">Groupes</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/course">
+							<i class="fa fa-folder-open"></i>
+							<span class="title">Cours</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/mark">
+							<i class="fa fa-university"></i>
+							<span class="title">Notes</class>
+						</a>
+					</li>
+							</ul>
+		</div>
+		<div id="main">
+							<h2>Nouvel élève</h2>
+						<div id="fil-ariane">
+				<ul>
+																<li>
+							Accueil						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Élèves						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Nouvel élève						</li>
+															</ul>
+			</div>
+			
+
+
+			
+
+
+
+<form method="post" action="">
+	<label>Nom</label><input type="text" name="name" value=""/><br />
+	<label>Prénom</label><input type="text" name="firstname" value=""/><br />
+	<label>Email</label><input type="text" name="email" value=""/><br />
+	<label>Adresse</label><input type="text" name="address" value=""/><br />
+	<label>Code postal</label><input type="number" name="postalCode" value=""/><br />
+	<label>Ville</label><input type="text" name="city" value=""/><br />
+	<label>Pays</label><input type="text" name="country" value=""/><br />
+	<label>Téléphone fixe</label><input type="text" name="phone-home" value=""/><br />
+	<label>Téléphone mobile</label><input type="text" name="phone-mobile" value=""/><br />
+	<label>Date de naissance</label><input type="text" name="date-born" value=""/><br />
+	<label>Sexe</label>
+	<select name="gender">
+		<option value="0" selected>Homme</option>
+		<option value="1" >Femme</option>
+	</select><br />
+	<label>Professeur référent</label>
+	<select name="teacher">
+					<option value="teacher2" >Georges - Teller</option>
+					<option value="teacher1" >Franck - Lepoivre</option>
+			</select><br />
+	<label>Contact</label>
+	<select id="contact-input" name="contact">
+		<option value="0">Créer un nouveau contact</value>
+					<option value="3" >Papa - Lorentz</option>
+					<option value="1" >Franck - Beaujean</option>
+			</select><br /><br />
+	<div id="contact-student" style="display:none;">
+		<h4>Nouveau contact</h4>
+		<label>Nom du contact</label><input type="text" name="contact-name" value=""/><br />
+		<label>Prénom du contact</label><input type="text" name="contact-firstname" value=""/><br />
+		<label>Email du contact</label><input type="text" name="contact-email" value=""/><br />
+		<label>Adresse du contact</label><input type="text" name="contact-address" value=""/><br />
+		<label>Code postal du contact</label><input type="number" name="contact-postalCode" value=""/><br />
+		<label>Ville du contact</label><input type="text" name="contact-city" value=""/><br />
+		<label>Pays du contact</label><input type="text" name="contact-country" value=""/><br />
+		<label>Téléphone fixe du contact</label><input type="text" name="contact-phone-home" value=""/><br />
+		<label>Téléphone mobile du contact</label><input type="text" name="contact-phone-mobile" value=""/><br />
+		<label>Sexe</label>
+		<select name="contact-gender">
+			<option value="0" >Homme</option>
+			<option value="1" >Femme</option>
+		</select><br />
+		<br /><br />
+	</div>
+	<input type="hidden" name="token" value="3364ad63e86ef2850b81e02f54891bd0f1abc7fd" />
+	<input type="submit" value="Enregistrer" />
+</form>
+
+		</div>
+		<footer></footer>	
+	</body>
+</html>
+
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		function checkInputContact()
+		{
+			if($('#contact-input').val() == "0")
+			{
+				$('#contact-student').css("display", "block");
+			}
+			else
+			{
+				$('#contact-student').css("display", "none");
+			}
+		}
+
+		checkInputContact();
+
+		$('#contact-input').change(function(){
+			checkInputContact();
+		});
+	});
+</script>

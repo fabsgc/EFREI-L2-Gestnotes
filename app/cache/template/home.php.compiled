@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html style="opacity:0;">
+	<head>
+		<meta charset="utf-8" />
+		<title>Cours - GestNotes</title>
+		<link rel="icon" type="image/png" href="/public/img/icon.png" />
+		<link href="/public/css/default.css" rel="stylesheet" media="screen" type="text/css" /> 
+		<link href="/public/file/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css" />
+		<script type="text/javascript" src="/public/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/public/js/default.js"></script>
+	</head>
+	<body id="body">
+		<header class="default">
+			<div id="header-left">
+				<i class="fa fa-book"></i> GestNotes
+			</div>
+			<div id="header-right">
+				<div class="right-account">
+					<div id="logout" class="account-logout">
+						<i class="fa fa-sign-out"></i>
+					</div>
+					<div class="account-profile">
+						<div class="profile-username">
+							William - Stow						</div>
+						<div class="profile-avatar">
+							<img src="/public/img/user.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"/>
+		</header>
+		<div id="side-menu">
+			<ul>
+				<li >
+					<a href="/">
+						<i class="fa fa-home"></i>
+						<span class="title">Accueil</class>
+					</a>
+				</li>
+				<li >
+					<a href="/user">
+						<i class="fa fa-user"></i>
+						<span class="title">Profil</class>
+					</a>
+				</li>
+																	<li >
+						<a href="/admin/student">
+							<i class="fa fa-user-plus"></i>
+							<span class="title">Élèves</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/teacher">
+							<i class="fa fa-binoculars"></i>
+							<span class="title">Professeurs</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/group">
+							<i class="fa fa-users"></i>
+							<span class="title">Groupes</class>
+						</a>
+					</li>
+					<li class="active">
+						<a href="/admin/course">
+							<i class="fa fa-folder-open"></i>
+							<span class="title">Cours</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/mark">
+							<i class="fa fa-university"></i>
+							<span class="title">Notes</class>
+						</a>
+					</li>
+							</ul>
+		</div>
+		<div id="main">
+							<h2>Cours</h2>
+						<div id="fil-ariane">
+				<ul>
+																<li>
+							Accueil						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Cours						</li>
+															</ul>
+			</div>
+			
+
+
+			
+
+
+<a href="/admin/course/new/703a4502e589c4c25b96d9f20c31f76f9e978606" class="button right">Nouveau cours</a>
+<table class="table">
+	<thead>
+		<tr>
+			<th class="matricule">Id</th>
+			<th>Nom</th>
+			<th class="action">Actions</th>
+		<tr>
+	</thead>
+	<tbody>
+					<tr>
+				<td>2</td>
+				<td>UML 2</td>
+				<td class="action">
+					<a href="/admin/course/edit/2/703a4502e589c4c25b96d9f20c31f76f9e978606"><span class="fa fa-pencil"></span></a>
+					<a href="/admin/course/delete/2/703a4502e589c4c25b96d9f20c31f76f9e978606"><span class="fa fa-times"></span></a>
+				</td>
+			</tr>
+					<tr>
+				<td>1</td>
+				<td>C++</td>
+				<td class="action">
+					<a href="/admin/course/edit/1/703a4502e589c4c25b96d9f20c31f76f9e978606"><span class="fa fa-pencil"></span></a>
+					<a href="/admin/course/delete/1/703a4502e589c4c25b96d9f20c31f76f9e978606"><span class="fa fa-times"></span></a>
+				</td>
+			</tr>
+			<tbody>
+</table>
+
+		</div>
+		<footer></footer>	
+	</body>
+</html>
+

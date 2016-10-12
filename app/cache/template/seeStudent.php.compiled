@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html style="opacity:0;">
+	<head>
+		<meta charset="utf-8" />
+		<title>Fabien - Beaujean - GestNotes</title>
+		<link rel="icon" type="image/png" href="/public/img/icon.png" />
+		<link href="/public/css/default.css" rel="stylesheet" media="screen" type="text/css" /> 
+		<link href="/public/file/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css" />
+		<script type="text/javascript" src="/public/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/public/js/default.js"></script>
+	</head>
+	<body id="body">
+		<header class="default">
+			<div id="header-left">
+				<i class="fa fa-book"></i> GestNotes
+			</div>
+			<div id="header-right">
+				<div class="right-account">
+					<div id="logout" class="account-logout">
+						<i class="fa fa-sign-out"></i>
+					</div>
+					<div class="account-profile">
+						<div class="profile-username">
+							William - Stow						</div>
+						<div class="profile-avatar">
+							<img src="/public/img/user.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"/>
+		</header>
+		<div id="side-menu">
+			<ul>
+				<li >
+					<a href="/">
+						<i class="fa fa-home"></i>
+						<span class="title">Accueil</class>
+					</a>
+				</li>
+				<li >
+					<a href="/user">
+						<i class="fa fa-user"></i>
+						<span class="title">Profil</class>
+					</a>
+				</li>
+																	<li class="active">
+						<a href="/admin/student">
+							<i class="fa fa-user-plus"></i>
+							<span class="title">Élèves</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/teacher">
+							<i class="fa fa-binoculars"></i>
+							<span class="title">Professeurs</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/group">
+							<i class="fa fa-users"></i>
+							<span class="title">Groupes</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/course">
+							<i class="fa fa-folder-open"></i>
+							<span class="title">Cours</class>
+						</a>
+					</li>
+					<li >
+						<a href="/admin/mark">
+							<i class="fa fa-university"></i>
+							<span class="title">Notes</class>
+						</a>
+					</li>
+							</ul>
+		</div>
+		<div id="main">
+							<h2>Fabien - Beaujean</h2>
+						<div id="fil-ariane">
+				<ul>
+																<li>
+							Accueil						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Élèves						</li>
+													<span class="fa fa-chevron-right">&#160;</span>
+																	<li>
+							Fabien - Beaujean						</li>
+															</ul>
+			</div>
+			
+
+
+			
+
+
+<a href="/admin/student/report/generate/20130089/3364ad63e86ef2850b81e02f54891bd0f1abc7fd" class="button right">Editer le bulletin de l'élève</a>
+<div class="clear-right"></div>
+<h4>Elève</h4>
+<ul>
+	<li><strong>Nom</strong> : Beaujean</li>
+	<li><strong>Prénom</strong> : Fabien</li>
+	<li><strong>Email</strong> : fabien.beaujean@efrei.net</li>
+	<li><strong>Adresse</strong> : 1 allée des mûriers</li>
+	<li><strong>Code postal</strong> : 91370</li>
+	<li><strong>Ville</strong> : Verrières-le-Buisson</li>
+	<li><strong>Pays</strong> : France</li>
+	<li><strong>Téléphone fixe</strong> : 0169307310</li>
+	<li><strong>Téléphone mobile</strong> : 0786027310</li>
+	<li><strong>Date de naissance</strong> : 20/07/1995</li>
+	<li>
+		<strong>Sexe</strong> :
+					homme
+			</li>
+	<li>
+		<strong>Professeur référent</strong> : 
+		Franck  
+		Lepoivre	</li>
+</ul>
+<h4>Responsable</h4>
+<ul>
+	<li><strong>Nom</strong> : Beaujean</li>
+	<li><strong>Prénom</strong> : Franck</li>
+	<li><strong>Email</strong> : franck.beaujean@yahoo.fr</li>
+	<li><strong>Adresse</strong> : 1 allée des mûriers</li>
+	<li><strong>Code postal</strong> : 91370</li>
+	<li><strong>Ville</strong> : Verrières-le-Buisson</li>
+	<li><strong>Pays</strong> : France</li>
+	<li><strong>Téléphone fixe</strong> : </li>
+	<li><strong>Téléphone mobile</strong> : </li>
+	<li>
+		<strong>Sexe</strong> :
+					homme
+			</li>
+</ul>
+
+		</div>
+		<footer></footer>	
+	</body>
+</html>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<define name="user-admin" value="ADMIN"/>
+	<define name="user-teacher" value="TEACHER"/>
+	<define name="user-student" value="STUDENT"/>
+	<define name="form-crsf" value="une erreur est survenue pendant la validation du formulaire"/>
+	<define name="promotion-year" value="2013"/>
+</root>

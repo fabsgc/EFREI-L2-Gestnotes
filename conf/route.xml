@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<route name="home" url="/" controller="index" action="home" logged="1" vars="" roles="*"/>
+	<route name="home2" url="(/*)" controller="index" action="home" logged="1" vars="" roles="*"/>
+	
+	<route name="user-home" url="/user(/*)" controller="user" action="home" logged="1" vars="" roles="*"/>
+	<route name="user-login" url="/" controller="user" action="login" logged="0" vars="" roles=""/>
+	<route name="user-logout" url="/logout" controller="user" action="logout" logged="1" vars="" roles="*"/>
+
+	<route name="student-mark" url="/student/mark(/*)" controller="studentMark" action="home" logged="1" vars="" roles="STUDENT"/>
+	<route name="student-mark-report" url="/student/mark/report(/*)" controller="studentMark" action="report" logged="1" vars="" roles="STUDENT"/>
+
+	<route name="student-course" url="/student/course(/*)" controller="studentCourse" action="home" logged="1" vars="" roles="STUDENT"/>
+
+	<route name="teacher-mark" url="/teacher/mark(/*)" controller="teacherMark" action="home" logged="1" vars="" roles="TEACHER"/>
+	<route name="teacher-mark-group" url="/teacher/mark/group/([0-9]+)(/*)" controller="teacherMark" action="group" logged="1" vars="id" roles="TEACHER"/>
+	<route name="teacher-mark-group-course" url="/teacher/mark/course/([0-9]+)/([0-9]+)(/*)" controller="teacherMark" action="course" logged="1" vars="group,course" roles="TEACHER"/>
+	<route name="teacher-mark-set" url="/teacher/mark/set/([0-9]+)/([0-9]+)/([0-9]+)/([0-9\.]+)/([0-9+])/(.*)(/*)" controller="teacherMark" action="setMark" logged="1" vars="group,course,student,value,type,token" roles="TEACHER"/>
+
+	<route name="teacher-course" url="/teacher/course(/*)" controller="teacherCourse" action="home" logged="1" vars="" roles="TEACHER"/>
+
+	<route name="teacher-student" url="/teacher/student(/*)" controller="teacherStudent" action="home" logged="1" vars="" roles="TEACHER"/>
+	
+	<route name="admin-student" url="/admin/student(/*)" controller="adminStudent" action="home" logged="1" vars="" roles="ADMIN"/>
+	<route name="admin-student-new" url="/admin/student/new/(.*)(/*)" controller="adminStudent" action="newStudent" logged="1" vars="token" roles="ADMIN"/>
+	<route name="admin-student-edit" url="/admin/student/edit/([0-9]+)/(.*)(/*)" controller="adminStudent" action="editStudent" logged="1" vars="id,token" roles="ADMIN"/>
+	<route name="admin-student-delete" url="/admin/student/delete/([0-9]+)/(.*)(/*)" controller="adminStudent" action="deleteStudent" logged="1" vars="id,token" roles="ADMIN"/>
+	<route name="admin-student-see" url="/admin/student/see/([0-9]+)(/*)" controller="adminStudent" action="seeStudent" logged="1" vars="id" roles="ADMIN"/>
+	<route name="admin-student-repoart-generate" url="/admin/student/report/generate/([0-9]+)/(.*)(/*)" controller="adminStudent" action="reportGenerateStudent" logged="1" vars="id,token" roles="ADMIN"/>
+	
+	<route name="admin-teacher" url="/admin/teacher(/*)" controller="adminTeacher" action="home" logged="1" vars="" roles="ADMIN"/>
+	<route name="admin-teacher-new" url="/admin/teacher/new/(.*)(/*)" controller="adminTeacher" action="newTeacher" logged="1" vars="token" roles="ADMIN"/>
+	<route name="admin-teacher-edit" url="/admin/teacher/edit/([a-z0-9]+)/(.*)(/*)" controller="adminTeacher" action="editTeacher" logged="1" vars="id,token" roles="ADMIN"/>
+	<route name="admin-teacher-delete" url="/admin/teacher/delete/([a-z0-9]+)/(.*)(/*)" controller="adminTeacher" action="deleteTeacher" logged="1" vars="id,token" roles="ADMIN"/>
+	<route name="admin-teacher-see" url="/admin/teacher/see/([a-z0-9]+)(/*)" controller="adminTeacher" action="seeTeacher" logged="1" vars="id" roles="ADMIN"/>
+
+	<route name="admin-group" url="/admin/group(/*)" controller="adminGroup" action="home" logged="1" vars="" roles="ADMIN"/>
+	<route name="admin-group-new" url="/admin/group/new/(.*)(/*)" controller="adminGroup" action="newGroup" logged="1" vars="token" roles="ADMIN"/>
+	<route name="admin-group-edit" url="/admin/group/edit/([0-9]+)/(.*)(/*)" controller="adminGroup" action="editGroup" logged="1" vars="id,token" roles="ADMIN"/>
+	<route name="admin-group-delete" url="/admin/group/delete/([0-9]+)/(.*)(/*)" controller="adminGroup" action="deleteGroup" logged="1" vars="id,token" roles="ADMIN"/>
+	<route name="admin-group-see" url="/admin/group/see/([0-9]+)(/*)" controller="adminGroup" action="seeGroup" logged="1" vars="id" roles="ADMIN"/>
+
+	<route name="admin-course" url="/admin/course(/*)" controller="adminCourse" action="home" logged="1" vars="" roles="ADMIN"/>
+	<route name="admin-course-new" url="/admin/course/new/(.*)(/*)" controller="adminCourse" action="newCourse" logged="1" vars="token" roles="ADMIN"/>
+	<route name="admin-course-edit" url="/admin/course/edit/([0-9]+)/(.*)(/*)" controller="adminCourse" action="editCourse" logged="1" vars="id,token" roles="ADMIN"/>
+	<route name="admin-course-delete" url="/admin/course/delete/([0-9]+)/(.*)(/*)" controller="adminCourse" action="deleteCourse" logged="1" vars="id,token" roles="ADMIN"/>
+
+	<route name="admin-mark" url="/admin/mark(/*)" controller="adminMark" action="home" logged="1" vars="" roles="ADMIN"/>
+	<route name="admin-mark-group" url="/admin/mark/group/([0-9]+)(/*)" controller="adminMark" action="group" logged="1" vars="id" roles="ADMIN"/>
+	<route name="admin-mark-group-course" url="/admin/mark/course/([0-9]+)/([0-9]+)(/*)" controller="adminMark" action="course" logged="1" vars="group,course" roles="ADMIN"/>
+	<route name="admin-mark-set" url="/admin/mark/set/([0-9]+)/([0-9]+)/([0-9]+)/([0-9\.]+)/([0-9+])/(.*)(/*)" controller="adminMark" action="setMark" logged="1" vars="group,course,student,value,type,token" roles="ADMIN"/>
+</root>
